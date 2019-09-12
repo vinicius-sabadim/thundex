@@ -15,15 +15,11 @@ test('outputs help', async () => {
   expect(output).toContain('0.0.1')
 })
 
-test('generates file', async () => {
-  const output = await cli('generate foo')
+test('generate a component', async () => {
+  const output = await cli('generate Main')
 
-  expect(output).toContain('Generated file at models/foo-model.js')
-  const foomodel = filesystem.read('models/foo-model.js')
-
-  expect(foomodel).toContain(`module.exports = {`)
-  expect(foomodel).toContain(`name: 'foo'`)
+  expect(output).toContain('Generated at src/components/Main')
 
   // cleanup artifact
-  filesystem.remove('models')
+  filesystem.remove('src/components')
 })

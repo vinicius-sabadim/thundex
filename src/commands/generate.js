@@ -38,6 +38,6 @@ module.exports = {
       props: { componentName }
     })
 
-    info(`Generated at ${path}/${componentName}`)
+    info(`Generated at ${path}${componentName}`)
   }
 }
