@@ -1,25 +1,13 @@
 # thundex CLI
 
-A CLI for thundex.
+A CLI to generate React components.
 
-## Customizing your CLI
+## Usage
 
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
+a Typescript component:
 
-## Publishing to NPM
+> thundex generate <componentName> --typescript
 
-To package your CLI up for NPM, do this:
+a regular javascript component:
 
-```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
-```
-
-# License
-
-MIT - see LICENSE
-
+> thundex generate <componentName>
