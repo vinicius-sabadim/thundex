@@ -1,0 +1,15 @@
+import React from 'react'
+
+import './<%= props.componentName %>.css'
+
+interface <%= props.componentName %>Props {
+
+} 
+
+const <%= props.componentName %>:React.FC<<%= props.componentName %>Props> = () => {
+  return (
+    <div className="<%= props.componentName.toLowerCase() %>__container"><%= props.componentName %></div>
+  )
+}
+
+export default <%= props.componentName %>
